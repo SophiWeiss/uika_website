@@ -3,12 +3,12 @@
     <h1>Welcome to Uika Website</h1>
   </div>
   <div class="main-boxes">
-    <div class="box1">One</div>
-    <div class="box2">Two</div>
-    <div class="box3">Three</div>
-    <div class="box4">Four</div>
-    <div class="box5">Five</div>
-    <div class="box6">Six</div>
+    <div class="box1 box">One</div>
+    <div class="box2 box">Two</div>
+    <div class="box3 box">Three</div>
+    <div class="box4 box">Four</div>
+    <div class="box5 box">Five</div>
+    <div class="box6 box">Six</div>
   </div>
 </div>
 
@@ -16,19 +16,26 @@
   .main-boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 100px;
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+    background-color: #fff2fb;
+    gap: 20px;
+    position: relative;
+    padding: 20px;
   }
-
-  .box1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
+  :global(body) {
+    background-color: #fff2fb;
   }
-
-  .box2 {
-    grid-column-start: 1;
-    grid-row-start: 3;
-    grid-row-end: 5;
+  :global(h1) {
+    color: #3c3666;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .box {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #817ca9;
   }
 </style>
