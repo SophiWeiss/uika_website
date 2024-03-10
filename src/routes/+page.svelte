@@ -41,13 +41,13 @@
     overflow: hidden;
   }
   .box::after {
-    content: 'Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon'; /* Текст повторяется, чтобы заполнить полосу */
+    content: 'Coming soon • Coming soon • Coming soon	• Coming soon	• Coming soon	• Coming soon	• Coming soon	• Coming soon	• Coming soon	• Coming soon'; /* Текст повторяется, чтобы заполнить полосу */
     display: block;
     position: absolute;
     top: 80%;
     left: 0;
     width: 200%;
-    transform: translate(-5%, -10%) rotate(-45deg);
+    transform: translate(-5%, -5%) rotate(-30deg);
     transform-origin: 0 0;
     background-color: #ebbb5d;
     color: #ffffff;
