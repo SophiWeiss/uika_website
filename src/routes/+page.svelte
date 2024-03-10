@@ -3,12 +3,12 @@
     <h1>Welcome to Uika Website</h1>
   </div>
   <div class="main-boxes">
-    <div class="box1 box">One</div>
-    <div class="box2 box">Two</div>
-    <div class="box3 box">Three</div>
-    <div class="box4 box">Four</div>
-    <div class="box5 box">Five</div>
-    <div class="box6 box">Six</div>
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+    <div class="box4 box"></div>
+    <div class="box5 box"></div>
+    <div class="box6 box"></div>
   </div>
 </div>
 
@@ -37,5 +37,25 @@
     border-radius: 20px;
     padding: 20px;
     background-color: #817ca9;
+    position: relative;
+    overflow: hidden;
+  }
+  .box::after {
+    content: 'Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon'; /* Текст повторяется, чтобы заполнить полосу */
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 200%;
+    transform: translate(-5%, -10%) rotate(-45deg);
+    transform-origin: 0 0;
+    background-color: #ebbb5d;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    pointer-events: none;
   }
 </style>
