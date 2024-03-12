@@ -1,0 +1,12 @@
+body {
+  background-color: var(--color-bg);
+}
+
+h1 {
+  font-size: xx-large;
+  color: var(--color-text-primary);
+  text-align: center;
+  vertical-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
