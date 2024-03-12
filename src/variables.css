@@ -1,0 +1,13 @@
+:root {
+  --color-bg: #fff2fb;
+  --color-bg-card: #817ca9;
+  --color-text-primary: #3c3666;
+
+  --color-bg-accent-variant: #ebbb5dff;
+  --color-text-accent-variant: white;
+
+  --spacing-: 20px;
+
+  --font-sm: 15px;
+  --font-md: 25px;
+}
